@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Netherlands</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+
+            function startCanvas()
+            {
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext('2d');
+
+                var image = new Image();
+                image.src = "holland.png";
+                image.onload = function () {
+                    ctx.drawImage(image, 0, 0);
+                }
+            }
+        </script>
+        <style>
+            canvas {
+                margin: 0px;
+                padding: 0px;
+                border: solid 1px black;
+            }
+
+            .tooltiptext {
+                visibility: hidden;
+                width: 600px;
+                background-color: rgba(0, 0, 0, 0.8);
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
+                bottom: 100%;
+                left: 50%; 
+                margin-left: -300px;
+                font-family: sans-serif;
+                position: absolute;
+                z-index: 1;
+            }
+
+            .tooltiptextBottom {
+                visibility: hidden;
+                width: 600px;
+                background-color: rgba(0, 0, 0, 0.8);
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
+                width: 600px; 
+                top: 100%; 
+                left: 50%;  
+                margin-left: -300px;
+                font-family: sans-serif;
+                position: absolute;
+                z-index: 1;
+            }
+
+            .utrecht {
+                position: absolute;
+                top: 322px;
+                left: 653px;
+                color: red;
+                font-size: 85%;
+            }
+
+            .utrecht:hover .tooltiptext {
+                visibility: visible;
+            }
+
+            .rotterdam {
+                position: absolute;
+                top: 420px;
+                left: 425px;
+                color: white;
+                font-size: 85%;
+            }
+
+            .rotterdam:hover .tooltiptext {
+                visibility: visible;
+            }
+
+            .amsterdam {
+                position: absolute;
+                top:162px;
+                left: 574px;
+                color: rgb(236,30,33);
+                font-size: 85%;
+            }
+
+            .amsterdam:hover .tooltiptextBottom {
+                visibility: visible;
+            }
+
+            .apeldoorn {
+                position: absolute;
+                top: 255px;
+                left: 957px;
+                color: white;
+                font-size: 75%;
+            }
+
+            .apeldoorn:hover .tooltiptextBottom {
+                visibility: visible;
+            }
+
+            .eindhoven {
+                position: absolute;
+                top: 696px;
+                left: 783px;
+                color: white;
+                font-size: 85%;
+            }
+
+            .eindhoven:hover .tooltiptext {
+                visibility: visible;
+            }
+
+        </style>
+    </head>
+    <body onload="startCanvas()">
+
+        <canvas id="myCanvas" width="1165" height="815">Not supported</canvas>
+
+        <div class="utrecht">  O
+            <div class="tooltiptext">
+                <h2>UTRECHT</h2>
+                <table>
+                    <tr>
+                        <td><img src="utrecht.jpg" style="padding-left: 5px;"></td>
+                        <td>
+                            Utrecht (pronounced 'oo-treck-t') is the capital and most populous city of the province of Utrecht. It is located in the eastern corner of the Randstad conurbation and is the fourth largest city in the Netherlands with a population of 345,080 in 2017. <br><br>
+                            Utrecht's ancient city centre features many buildings and structures several dating as far back as the High Middle Ages. It has been the religious centre of the Netherlands since the 8th century.</td>
+                    </tr>
+                </table>
+                <br>
+            </div>
+        </div>
+
+        <div class="rotterdam">  O
+            <div class="tooltiptext">
+                <h2>ROTTERDAM</h2>
+                <table>
+                    <tr>
+                        <td><img src="rotterdam.jpg" style="padding-left: 5px;"></td>
+                        <td>Rotterdam is a city in South Holland within the Rhine–Meuse–Scheldt river delta at the North Sea. Its history goes back to 1270, when a dam was constructed in the Rotte river, after which people settled around it for safety. In 1340, Rotterdam was granted city rights by the Count of Holland.<br><br>
+                            A major logistic and economic centre, Rotterdam is Europe's largest port, and has a population of 633,471 (2017), the second-largest in the Netherlands, just behind Amsterdam.</td>
+                    </tr>
+                </table>
+                <br>
+            </div>
+        </div>
+
+        <div class="amsterdam">  O
+            <div class="tooltiptextBottom">
+                <h2>AMSTERDAM</h2>
+                <table>
+                    <tr>
+                        <td><img src="amsterdam.jpg" style="padding-left: 5px;"></td>
+                        <td>Amsterdam is the capital and most populous municipality of the Netherlands. Its status as the capital is mandated by the Constitution of the Netherlands, although it is not the seat of the government, which is The Hague. Amsterdam has a population of 851,373 within the city proper, 1,351,587 in the urban area, and 2,410,960 in the Amsterdam metropolitan area. The city is located in the province of North Holland in the west of the country but is not its capital, which is Haarlem. The metropolitan area comprises much of the northern part of the Randstad, one of the larger conurbations in Europe, with a population of approximately 7 million.
+                    </tr>
+                </table>
+                <br>
+            </div>
+        </div>
+
+        <div class="apeldoorn">  O
+            <div class="tooltiptextBottom">
+                <h2>APELDOORN</h2>
+                <table>
+                    <tr>
+                        <td><img src="apeldoorn.jpg" style="padding-left: 5px;"></td>
+                        <td>Apeldoorn is a municipality and city in the province of Gelderland in the centre of the Netherlands. It is a regional centre. The municipality of Apeldoorn, including villages like Beekbergen, Loenen and Hoenderloo, had a population of 160,852 in 2017. The western half of the municipality lies on the Veluwe ridge, the eastern half lies in the IJssel valley. <br><br>
+                            Apeldoorn was a relatively insignificant place until the major building projects of the 19th century and those of the period following World War II. The southwestern corner of the municipality is part of the Hoge Veluwe National Park. It is the final Battle Honour of The Royal Canadian Regiment who took part in the town's liberation in World War II.</td>
+                    </tr>
+                </table>
+                <br>
+            </div>
+        </div>
+
+        <div class="eindhoven">  O
+            <div class="tooltiptext">
+                <h2>EINDHOVEN</h2>
+                <table>
+                    <tr>
+                        <td><img src="eindhoven.jpg" style="padding-left: 5px;"></td>
+                        <td>
+                            Eindhoven is a municipality and a city in the south of the Netherlands, originally at the confluence of the Dommel and Gender streams. The Gender was dammed short of the city centre in the 1950s and the Dommel still runs through the city. The city has a population of 223,220 in January 2015, making it the fifth-largest municipality of the Netherlands and the largest in the province of North Brabant.
+                            <br><br>
+                            Neighbouring cities and towns include Son en Breugel, Nuenen, Geldrop-Mierlo, Heeze-Leende, Waalre, Veldhoven, Eersel, Oirschot and Best. The agglomeration has a population of 337,487. The metropolitan area consists of 419,045 inhabitants. The city region has a population of 753,426. Also, Eindhoven is located in the Brabantse Stedenrij, a combined metropolitan area with about 2 million inhabitants.</td>
+                    </tr>
+                </table>
+                <br>
+            </div>
+        </div>
+
+        <div style='padding-left: 15px; font-family: sans-serif;'>
+            <h2> Country: The Netherlands </h2>
+            Did you know the Netherlands got it's name due to the fact that a lot of the country is below sea level? Only 50% of the country actually exceeds one metre above sea level. "Netherlands" literally means "lower countries". The country used to be called "Holland" and that name is still informally used. The Netherlands is the world's second-largest exporter of food and agricultural products, after the United States. They are also well known for windmills and flowers, such as tulips. I chose this country because my mother was born and lived in Veenendaal, a city outside of Utrecht, until she moved to Canada when she was 16. Due to the odd shape of the country, I have only included part of it, as the whole country is not very browser-friendly.
+            <h3>Cities Chosen:</h3>
+            1. Amsterdam<br>
+            2. Apeldoorn<br>
+            3. Eindhoven<br>
+            4. Rotterdam<br>
+            5. Utrecht<br><br>
+            <i>All information found from www.wikipedia.org.</i>
+
+        </div>
+
+    </body>
+</html>
